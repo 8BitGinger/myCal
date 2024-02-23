@@ -2,6 +2,10 @@ body {
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  background-image: url(./assets/images/beach-abstract.png);
+  background-position: center;
+  background-size: cover;
+  font-family: josefin sans;
 }
 button {
   width: 75px;
@@ -16,27 +20,30 @@ button {
 
 #header {
   padding: 10px;
-  color: #d36c6c;
+  color: #02b7fe;
+  font-family: josefin sans;
   font-size: 26px;
-  font-family: sans-serif;
   display: flex;
   justify-content: space-between;
 }
 #header button {
   background-color: #ffffff;
-  color: #d36c6c;
+  color: #02b7fe;
 }
 #container {
   width: 770px;
-  background-color: rgb(145, 207, 246);
+  background: linear-gradient(rgba(243, 236, 158, 0.8), rgba(9, 191, 252, 0.8));
   border-radius: 15px;
   padding: 5px;
+  scale: 0.9;
 }
 #weekdays {
   width: 100%;
   display: flex;
-  color: #000000;
+  color: #02b7fe;
+  font-weight: bold;
   text-align: center;
+  font-family: josefin sans;
 }
 #weekdays div {
   width: 100px;
@@ -61,26 +68,31 @@ button {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 8px;
+  font-family: Anton;
+  color: #171770;
 }
 .day:hover {
-  background-color: #fae8e8;
+  background-color: #e3ffe7;
 }
 
 .day + #currentDay {
-  border: 3px solid #d36c6c;
+  border: 3px solid #171770;
+  background-color: #daf5fb;
+  scale: 1.1;
 }
 .event {
   font-size: 10px;
   padding: 3px;
-  background-color: #58bae4;
+  background-color: #1883e1;
   color: white;
   border-radius: 5px;
   max-height: 55px;
   overflow: hidden;
+  font-family: josefin sans;
 }
 .padding {
   cursor: default !important;
-  background-color: #fffcff !important;
+  background-color: #e3e3e3 !important;
   box-shadow: none !important;
 }
 #newEventModal,
@@ -88,14 +100,13 @@ button {
   display: none;
   z-index: 20;
   padding: 25px;
-  background-color: #e8f4fa;
+  background-color: #d8f9ffd7;
   box-shadow: 0px 0px 3px black;
   border-radius: 5px;
   width: 350px;
   top: 100px;
   left: calc(50% - 175px);
   position: absolute;
-  font-family: sans-serif;
 }
 #eventTitleInput {
   padding: 10px;
@@ -112,11 +123,11 @@ button {
 }
 #cancelButton,
 #deleteButton {
-  background-color: #d36c6c;
+  background-color: #ce5858;
 }
 #saveButton,
 #closeButton {
-  background-color: #92a1d1;
+  background-color: #02b7fe;
 }
 #eventText {
   font-size: 14px;
@@ -129,5 +140,5 @@ button {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(32, 32, 32, 0.8);
 }
