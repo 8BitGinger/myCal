@@ -29,6 +29,9 @@ button {
 #header button {
   background-color: #ffffff;
   color: #02b7fe;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 #container {
   width: 770px;
@@ -58,6 +61,11 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
+
+#monthDisplay {
+  font-size: 40px;
+}
+
 .day {
   width: 100px;
   padding: 10px;
@@ -145,4 +153,50 @@ button {
   height: 100vh;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.879);
+}
+
+@media screen and (max-width: 747px) {
+  body {
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  #container {
+    width: 350px;
+  }
+
+  .day {
+    width: 40px;
+    height: 80px;
+  }
+
+  #header button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  #newEventModal {
+    width: 250px;
+    left: calc(50% - 145px);
+  }
+
+  #deleteEventModal {
+    width: 250px;
+    left: calc(50% - 145px);
+  }
+
+  .event {
+    text-overflow: ellipsis;
+    font-size: 10px;
+    margin: 2px;
+  }
+
+  .day {
+    padding: 0;
+  }
+
+  #monthDisplay {
+    font-size: 30px;
+  }
 }
