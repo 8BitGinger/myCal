@@ -3,9 +3,13 @@
 
 # myCal
 
+![logo](./assets/images/myCalProject.jpg)
+
+---
+
 ## Description
 
-A personal calendar with more features coming soon. It utilizes plain vanilla javascript to dynamically change the date displayed and the current day. You can add and delete daily events with more functionality coming soon!
+A personal calendar with more features coming soon. Never miss an important date again! This is a user-friendly, web-based calendar built with plain JavaScript. It allows you to dynamically navigate through months and easily identify the current day. But that's not all! You can add and delete daily events, keeping your schedule organized and in one place. This is just the beginning – stay tuned for exciting new features coming soon!
 
 ## Table of Contents
 
